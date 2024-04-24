@@ -1,9 +1,8 @@
 package com.boot.questionpro.repo;
 
+import com.boot.questionpro.entity.ResponseSet;
 import org.springframework.data.jpa.repository.JpaRepository;
 
-import com.boot.questionpro.entity.ResponseSet;
-
-public interface ResponseSetRepo extends JpaRepository<ResponseSet, Long>{
+public interface ResponseSetRepo extends JpaRepository<ResponseSet, Integer> {
 
 }

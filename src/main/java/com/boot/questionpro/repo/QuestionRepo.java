@@ -1,9 +1,8 @@
 package com.boot.questionpro.repo;
 
+import com.boot.questionpro.entity.Question;
 import org.springframework.data.jpa.repository.JpaRepository;
 
-import com.boot.questionpro.entity.Question;
-
-public interface QuestionRepo extends JpaRepository<Question, Long>{
+public interface QuestionRepo extends JpaRepository<Question, Integer> {
 
 }

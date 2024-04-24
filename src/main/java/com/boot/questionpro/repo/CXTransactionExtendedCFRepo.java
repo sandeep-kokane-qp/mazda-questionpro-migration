@@ -1,9 +1,8 @@
 package com.boot.questionpro.repo;
 
+import com.boot.questionpro.entity.CXTransactionExtendedCustomFields;
 import org.springframework.data.jpa.repository.JpaRepository;
 
-import com.boot.questionpro.entity.CXTransactionExtendedCustomFields;
-
-public interface CXTransactionExtendedCFRepo extends JpaRepository<CXTransactionExtendedCustomFields, Long>{
+public interface CXTransactionExtendedCFRepo extends JpaRepository<CXTransactionExtendedCustomFields, Integer> {
 
 }
