@@ -4,6 +4,7 @@ import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
+import lombok.ToString;
 
 import java.sql.Date;
 import java.time.LocalDate;
@@ -16,6 +17,7 @@ import java.util.List;
 @Getter
 @Setter
 @NoArgsConstructor
+@ToString
 public class Question {
 
     @Id
@@ -30,7 +32,7 @@ public class Question {
     @Column(name = "question_id")
     private Integer questionId;
 
-    @OneToMany(mappedBy = "q_id", fetch = FetchType.EAGER)
-    private List<Answer> answersList = new LinkedList<>();
+//    @OneToMany(mappedBy = "q_id", fetch = FetchType.EAGER)
+//    private List<Answer> answersList = new LinkedList<>();
 
 }
